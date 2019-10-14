@@ -18,9 +18,9 @@ function App() {
   
     return firebaseInitialized!== false ?(
         <div className="container-fluid">
-        <Router>
+        <Router history={history}>
             <Switch>
-            <Route history={history}>
+            <Route >
                 <Route path="/homepage" exact component={Homepage}/>
                 <Route path="/signin" exact component={Signin}/>
                 <Route path="/signup" exact component={SignUp}/>
